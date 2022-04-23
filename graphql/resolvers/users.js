@@ -78,7 +78,7 @@ module.exports = {
       });
       const res = await newUser.save();
       const token = generateToken(res);
-      console.log(res);
+
       return {
         username: res.username,
         password: res.password,
