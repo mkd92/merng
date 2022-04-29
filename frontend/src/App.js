@@ -8,12 +8,15 @@ import NavBar from "./components/NavBarNew";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
-      </Routes>
+      <div className="grid grid-flow-row grid-cols-1 justify-items-center">
+        {/* <div className="container max-w-7xl"> */}
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
